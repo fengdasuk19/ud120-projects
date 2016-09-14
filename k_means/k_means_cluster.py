@@ -76,9 +76,17 @@ try:
 except NameError:
     print "no predictions object named pred found, no clusters to plot"
 
-originLIST = [data_dict[ii]['exercised_stock_options'] for ii in data_dict.keys() if data_dict[ii]['exercised_stock_options']!='NaN']
-maxESO = max(originLIST)
-minESO = min(originLIST)
+#originLIST = [data_dict[ii]['exercised_stock_options'] for ii in data_dict.keys() if data_dict[ii]['exercised_stock_options']!='NaN']
+#maxESO = max(originLIST)
+#minESO = min(originLIST)
 
-print "minESO:{}".format(minESO)
-print "maxESO:{}".format(maxESO)
+#print "minESO:{}".format(minESO)
+#print "maxESO:{}".format(maxESO)
+
+originLIST = [data_dict[ii]['salary'] for ii in data_dict.keys() if data_dict[ii]['salary']!='NaN']
+maxSalary = max(originLIST)
+minSalary = min(originLIST)
+
+print "minSalary:{}".format(minSalary)
+print "maxSalary:{}".format(maxSalary)
+
